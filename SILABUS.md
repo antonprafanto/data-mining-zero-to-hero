@@ -78,31 +78,46 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 ---
 
 ### 📦 Modul 00: Mindset Data Mining & Google Colab Onboarding
-*Tujuan: Memahami filosofi data mining, membedakannya dari disiplin ilmu serumpun, serta menguasai ekosistem Google Colab tanpa perlu ribet instalasi lokal.*
+*Tujuan: Memahami filosofi data mining, membedakannya dari disiplin ilmu serumpun, menguasai 2 tugas pokok (Prediktif vs Deskriptif), 4 tipe data dunia nyata, serta menguasai ekosistem Google Colab tanpa perlu ribet instalasi lokal.*
 
 * **0.1 Apa Itu Data Mining Sebenarnya?**
-  * Analogi "Mendulang Emas di Sungai Lumpur": Mengubah data mentah menjadi wawasan bisnis (*actionable insights*).
-  * Perbedaan Data Mining vs Data Science vs Machine Learning vs Database Query (SQL).
-  * Standar Siklus Kerja Industri: Metodologi **CRISP-DM** (*Cross-Industry Standard Process for Data Mining*):
-    1. *Business Understanding*
-    2. *Data Understanding*
-    3. *Data Preparation*
-    4. *Modeling*
-    5. *Evaluation*
-    6. *Deployment*
-* **0.2 Mengapa Menggunakan Google Colab?**
-  * Keuntungan: Gratis, berbasis cloud, spesifikasi tinggi (RAM & CPU/GPU gratis), tidak membebani laptop pemula.
-  * Antarmuka Colab: Memahami *Code Cell* vs *Markdown Cell*, cara menjalankan kode (`Shift + Enter`).
-  * Shortcut produktivitas esensial di Colab.
-* **0.3 Manajemen File & Lifehacks Colab untuk Pemula**
-  * Cara menghubungkan Colab dengan Google Drive (`drive.mount('/content/drive')`).
-  * Mengunggah dataset lokal ke Colab (`files.upload()`) atau mengunduh dataset via URL / `wget`.
-  * Menginstal pustaka eksternal dengan perintah bash (`!pip install <nama_pustaka>`).
-  * Mengatasi masalah sesi terputus (*Runtime Disconnected* / timeout) dan cara menyimpan pekerjaan secara aman.
+  * Analogi "Mendulang Emas di Sungai Keruh": Mengubah tumpukan data mentah (*raw data*) menjadi wawasan bisnis (*actionable insights*).
+  * Fenomena *"Data rich, but information poor"* di era modern.
+  * Perbedaan Data Mining vs Machine Learning vs Artificial Intelligence vs Data Science.
+* **0.2 Dua Tugas Pokok Data Mining: Prediktif vs Deskriptif**
+  * **Tugas Prediktif**: Memiliki target (*supervised*) untuk menebak masa depan.
+    * Klasifikasi (memprediksi label kategori, e.g., Spam vs Bukan Spam).
+    * Regresi (memprediksi angka kontinu, e.g., estimasi harga rumah).
+  * **Tugas Deskriptif**: Menemukan pola alami tersembunyi tanpa target (*unsupervised*).
+    * Klasterisasi (pengelompokan segmen data mirip).
+    * Aturan Asosiasi (*Market Basket Analysis* / barang yang dibeli bersamaan).
+    * Deteksi Anomali (menemukan kejanggalan/fraud).
+* **0.3 Kapan Butuh Data Mining & Kapan Cukup Rumus/SQL Biasa?**
+  * Kapan **tidak perlu** data mining: masalah berpola pasti yang bisa dihitung dengan rumus matematika pasti atau query SQL biasa.
+  * Kapan **wajib** data mining: data besar, polanya tersembunyi (*unknown pattern*), dan relasi antar variabel terlalu kompleks bagi logika manusia biasa.
+* **0.4 Dua Metodologi Standar: KDD vs CRISP-DM**
+  * Metodologi Akademik: **KDD** (*Knowledge Discovery in Databases*): Selection, Cleaning, Transformation, Data Mining, Pattern Evaluation.
+  * Metodologi Industri: **CRISP-DM** (Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, Deployment).
+* **0.5 Fondasi Mutlak: 4 Tipe Data Dunia Nyata**
+  * Numerik Kontinu (pecahan/desimal) vs Numerik Diskrit (angka bulat hasil hitungan).
+  * Kategorikal Nominal (tanpa tingkatan) vs Kategorikal Ordinal (memiliki hierarki peringkat).
+* **0.6 Mengapa Menggunakan Google Colab & Anatomi Antarmuka**
+  * Keuntungan komputasi awan gratis, RAM & CPU/GPU gratis, tidak membebani laptop pemula.
+  * Antarmuka Colab: Bilah sisi 📁 (*Files Explorer*), status RAM & Disk, CPU vs GPU gratis.
+  * Sel Teks (*Markdown*) vs Sel Kode (*Python*), shortcut produktivitas esensial (`Shift + Enter`, `Esc B`, `Esc DD`).
+  * Aturan Emas Spasi Python (*Indentation*): Menghindari `IndentationError` bagi pemula.
+* **0.7 Manajemen File & Lifehacks Colab untuk Pemula**
+  * Memahami sifat sesi sementara (*ephemeral*) dan cara menghubungkan Google Drive (`drive.mount`).
+  * Batasan kuota Colab gratis: batas durasi 12 jam, *idle timeout* 90 menit.
+  * Membaca dataset daring langsung via URL tanpa ketergantungan OS.
+  * Cara mengunduh file notebook ke harddisk komputer (`.ipynb` / `.py`).
 * **🎯 Checklist Pemahaman Diri Modul 00:**
-  - [ ] Saya paham perbedaan Data Mining dengan pencarian query database biasa.
-  - [ ] Saya hafal 6 tahapan siklus CRISP-DM dan urutannya.
-  - [ ] Saya bisa membuka Google Colab, menulis kode Python sederhana, dan menyambungkan Google Drive.
+  - [ ] Saya paham analogi data mining mendulang emas dari pasir sungai keruh.
+  - [ ] Saya bisa membedakan 2 tugas pokok: Prediktif (ada target) vs Deskriptif (tanpa target).
+  - [ ] Saya tahu kapan masalah butuh data mining dan kapan cukup rumus kalkulasi biasa.
+  - [ ] Saya paham 4 tipe data: Kontinu, Diskrit, Nominal, dan Ordinal.
+  - [ ] Saya hafal alur KDD (5 tahap) dan CRISP-DM (6 tahap).
+  - [ ] Saya bisa membuka Google Colab, menjalankan kode, dan tahu cara mengunduh notebook.
 
 ---
 
