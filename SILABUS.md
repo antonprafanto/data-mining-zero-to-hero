@@ -5,20 +5,37 @@
 
 ---
 
+## 📖 Kamus Istilah Awam (*Jargon Buster*)
+
+Bagi Anda yang baru pertama kali terjun ke dunia data, jangan biarkan istilah teknis bahasa Inggris membuat Anda takut. Gunakan kamus analogi ini sebagai pegangan:
+
+| Istilah Teknis | Bahasa Sederhana | Analogi Dunia Nyata |
+| :--- | :--- | :--- |
+| **Dataset** | Tabel Kumpulan Data | Buku catatan besar atau lembar Excel berisi baris dan kolom. |
+| **Feature (Fitur / Atribut)** | Ciri-ciri / Variabel Input | Karakteristik fisik seseorang (tinggi badan, warna rambut, usia). |
+| **Target / Label** | Kunci Jawaban / Hasil Tebakan | Hasil diagnosis dokter (Positif Sakit / Sehat). |
+| **Supervised Learning** | Belajar dengan Guru | Belajar mengerjakan soal ujian yang di bagian belakang bukunya sudah ada kunci jawabannya. |
+| **Unsupervised Learning** | Belajar Tanpa Guru | Diberi sekotak kancing acak lalu diminta mengelompokkan sendiri berdasarkan kesamaan warna/bentuk tanpa diberi tahu nama kancingnya. |
+| **Training Data (Data Latih)** | Bahan Latihan Belajar | Kumpulan soal latihan yang dikerjakan siswa sebelum hari ujian. |
+| **Testing Data (Data Uji)** | Lembar Ujian Asli | Soal ujian akhir semester yang belum pernah dilihat siswa untuk menguji kepintarannya. |
+| **Overfitting** | Menghafal Mati (Terlalu Kaku) | Siswa yang menghafal persis angka soal latihan. Saat angka diganti sedikit di hari ujian, ia langsung panik dan gagal. |
+| **Underfitting** | Kurang Belajar (Terlalu Malas) | Siswa yang malas membaca buku, sehingga polanya saja tidak tahu. |
+| **Data Leakage** | Mencontek Bocoran Soal | Tanpa sengaja melihat kunci jawaban ujian saat masih sesi latihan, sehingga terkesan pintar padahal mencontek. |
+| **Hyperparameter** | Tombol Setelan / Kenop Mesin | Tombol pengatur suhu pada oven kue atau kenop frekuensi radio untuk mencari sinyal paling jernih. |
+| **Inference / Deployment** | Terjun ke Lapangan Nyata | Membawa mesin/model yang sudah pintar keluar dari lab untuk melayani pengguna asli di web. |
+
+---
+
 ## 🧭 Peta Jalan Pembelajaran (*Learning Roadmap*)
 
-Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda dapat mempelajarinya sesuai kecepatan masing-masing (*self-paced*). Setiap modul dirancang berurutan (**step-by-step**) dengan pendekatan:
-1. **Analogi Dunia Nyata** (memahami intuisi tanpa pusing rumus rumit).
-2. **Hands-On Google Colab** (langsung mempraktikkan kode baris demi baris).
-3. **Studi Kasus Nyata** (menggunakan dataset riil industri).
-4. **Fullstack Mindset** (tidak berhenti di file notebook, melainkan dikemas menjadi web app interaktif).
+Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda dapat mempelajarinya sesuai kecepatan masing-masing (*self-paced*).
 
 ```
    [ LEVEL 0: FONDASI ]
-   Modul 00: Mindset & Google Colab Onboarding
+   Modul 00: Mindset Data Mining, KDD, CRISP-DM & Google Colab Lifehacks
          │
          ▼
-   Modul 01: Fondasi Python & Data Exploration (Pandas, Numpy, Viz)
+   Modul 01: Fondasi Python & Data Exploration (Pandas, Numpy, Seaborn)
          │
          ▼
    [ LEVEL 1: PREPARATION & INSIGHT ]
@@ -51,7 +68,7 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
    Modul 10: Membangun & Mendeploy Web App Interaktif (Streamlit & Cloud Deploy)
          │
          ▼
-   Modul 11: Capstone Project Akhir & Portofolio GitHub Profesional
+   Modul 11: Capstone Project Akhir, Etika Data & Portofolio GitHub Profesional
 ```
 
 ---
@@ -77,12 +94,15 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
   * Keuntungan: Gratis, berbasis cloud, spesifikasi tinggi (RAM & CPU/GPU gratis), tidak membebani laptop pemula.
   * Antarmuka Colab: Memahami *Code Cell* vs *Markdown Cell*, cara menjalankan kode (`Shift + Enter`).
   * Shortcut produktivitas esensial di Colab.
-* **0.3 Manajemen File & Ekosistem Colab**
+* **0.3 Manajemen File & Lifehacks Colab untuk Pemula**
   * Cara menghubungkan Colab dengan Google Drive (`drive.mount('/content/drive')`).
   * Mengunggah dataset lokal ke Colab (`files.upload()`) atau mengunduh dataset via URL / `wget`.
   * Menginstal pustaka eksternal dengan perintah bash (`!pip install <nama_pustaka>`).
-* **🎯 Latihan Mandiri Modul 00:**
-  * Membuat notebook Colab pertama, menuliskan deskripsi profil diri dengan format Markdown rapi, dan menjalankan perintah Python sederhana untuk menampilkan informasi sistem.
+  * Mengatasi masalah sesi terputus (*Runtime Disconnected* / timeout) dan cara menyimpan pekerjaan secara aman.
+* **🎯 Checklist Pemahaman Diri Modul 00:**
+  - [ ] Saya paham perbedaan Data Mining dengan pencarian query database biasa.
+  - [ ] Saya hafal 6 tahapan siklus CRISP-DM dan urutannya.
+  - [ ] Saya bisa membuka Google Colab, menulis kode Python sederhana, dan menyambungkan Google Drive.
 
 ---
 
@@ -107,8 +127,10 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
   * Membuat plot dasar: Bar Chart, Line Chart, Histogram, dan Scatter Plot.
   * Menyesuaikan judul, label sumbu, ukuran kanvas, dan palet warna.
   * Heatmap korelasi sederhana untuk melihat hubungan antar kolom numerik.
-* **🎯 Studi Kasus Modul 01:**
-  * Mengimpor dataset penjualan ritel (Retail Sales Data) di Colab, lalu mencari produk terlaris, bulan dengan omset tertinggi, serta memvisualisasikannya dalam diagram batang dan garis.
+* **🎯 Checklist Pemahaman Diri Modul 01:**
+  - [ ] Saya bisa memuat file CSV ke DataFrame Pandas.
+  - [ ] Saya bisa memfilter baris tertentu dan mengelompokkan data dengan `.groupby()`.
+  - [ ] Saya bisa membuat grafik diagram batang dan histogram sebaran data dengan Seaborn.
 
 ---
 
@@ -136,13 +158,15 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
   * **Label / Ordinal Encoding**: Untuk kategori yang memiliki hierarki/peringkat (contoh: SD < SMP < SMA).
   * **One-Hot Encoding**: Untuk kategori nominal tanpa hierarki (contoh: Warna: Merah, Hijau, Biru) menggunakan `pd.get_dummies()` atau `OneHotEncoder`.
   * Menghindari perangkap jebakan multikolinearitas (*Dummy Variable Trap*).
-* **🎯 Studi Kasus Modul 02:**
-  * Membersihkan dataset riil pasien rumah sakit atau nasabah bank yang penuh dengan missing value, nilai salah ketik, outlier ekstrem, dan kolom teks heterogen.
+* **🎯 Checklist Pemahaman Diri Modul 02:**
+  - [ ] Saya tahu kapan harus mengisi missing value dengan median daripada mean.
+  - [ ] Saya bisa mendeteksi batas outlier menggunakan rumus IQR ($Q1 - 1.5 \times IQR$ dan $Q3 + 1.5 \times IQR$).
+  - [ ] Saya paham mengapa kita perlu menstandarkan skala umur (puluhan) dan gaji (jutaan) sebelum melatih model.
 
 ---
 
 ### 📦 Modul 03: Exploratory Data Analysis (EDA) & Feature Engineering
-*Tujuan: Mampu menggali cerita dan pola tersembunyi dari dataset serta merekayasa fitur baru yang meningkatkan akurasi model.*
+*Tujuan: Mampu menggali cerita dan pola tersembunyi dari dataset serta merekayasa fitur baru yang meningkatkan performa model.*
 
 * **3.1 Alur Kerja EDA Terstruktur**
   * Analisis Univariat: Mengetahui distribusi satu per satu variabel (Skewness, Kurtosis).
@@ -156,13 +180,15 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
   * Bahaya *Curse of Dimensionality* (terlalu banyak kolom membuat model lambat dan rentan *overfitting*).
   * Filter Methods: Analisis korelasi tinggi antar fitur independen (*Multicollinearity*).
   * Embedded Methods: Memeriksa *Feature Importance* dari model berbasis pohon.
-* **🎯 Studi Kasus Modul 03:**
-  * Melakukan EDA komprehensif pada dataset Titanic atau Penumpang Pesawat untuk menemukan faktor kunci yang menentukan keselamatan atau kepuasan penumpang.
+* **🎯 Checklist Pemahaman Diri Modul 03:**
+  - [ ] Saya bisa membaca heatmap korelasi dan mengidentifikasi fitur yang paling berpengaruh terhadap target.
+  - [ ] Saya mampu membuat fitur turunan baru yang bermakna dari data tanggal dan teks.
+  - [ ] Saya tahu fitur mana yang harus dibuang karena redundan.
 
 ---
 
 ### 📦 Modul 04: Supervised Learning I – Klasifikasi (*Classification*)
-*Tujuan: Memahami intuisi, matematika dasar, implementasi kode, dan metrik evaluasi algoritma prediksi kategori/label diskrit.*
+*Tujuan: Memahami intuisi, implementasi kode, dan metrik evaluasi algoritma prediksi kategori/label diskrit.*
 
 * **4.1 Konsep Dasar Klasifikasi & Partisi Data**
   * Perbedaan Data Latih (*Training Set*) dan Data Uji (*Testing Set*).
@@ -170,27 +196,27 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
   * Memahami fenomena *Overfitting* (menghafal) vs *Underfitting* (kurang belajar).
 * **4.2 Algoritma Klasifikasi Populer**
   * **K-Nearest Neighbors (k-NN)**:
-    * Intuisi: "Karaktermu ditentukan oleh siapa tetangga terdekatmu".
+    * *Analogi*: "Tebak selera musik seseorang berdasarkan selera musik 3 teman terdekatnya".
     * Perhitungan jarak Euclidean dan Manhattan.
     * Memilih nilai K ganjil terbaik.
   * **Naive Bayes (Gaussian & Multinomial)**:
-    * Intuisi: Teorema Bayes dan asumsi independensi bersyarat.
+    * *Analogi*: Dokter yang menghitung probabilitas pasien terkena flu berdasarkan gejala demam dan batuk secara independen.
     * Keunggulan: Sangat cepat, efisien, handal untuk data teks/spam.
   * **Decision Tree (Pohon Keputusan)**:
-    * Intuisi: Alur pengambilan keputusan bercabang (*if-then-else*).
+    * *Analogi*: Bagan alur "Buku Panduan Diagnosa" (Jika batuk > ya -> cek suhu > 38°C -> demam tinggi).
     * Konsep Gini Impurity dan Entropy / Information Gain.
-    * Visualisasi pohon keputusan dengan Scikit-Learn.
   * **Random Forest (Ensemble Learning)**:
-    * Intuisi: "Musyawarah mufakat sekelompok pohon jauh lebih bijak daripada satu pohon tunggal".
-    * Konsep *Bagging* (*Bootstrap Aggregating*) dan pemilihan fitur acak.
+    * *Analogi*: Mengumpulkan pendapat 100 dokter spesialis lalu mengambil voting terbanyak (*majority voting*).
 * **4.3 Evaluasi Model Klasifikasi Secara Tuntas**
   * Mengapa **Accuracy** bisa menipu pada kasus data tidak seimbang (*Imbalanced Data*)?
   * Membedah **Confusion Matrix**: True Positive (TP), False Positive (FP), True Negative (TN), False Negative (FN).
   * **Precision** vs **Recall**: Kapan memprioritaskan Precision (contoh: spam filter) dan kapan Recall (contoh: deteksi kanker/penyakit kritis)?
   * **F1-Score** dan **ROC-AUC Score**.
-  * Teknik menangani kelas tidak seimbang: **SMOTE** (*Synthetic Minority Over-sampling Technique*) menggunakan pustaka `imblearn`.
-* **🎯 Studi Kasus Modul 04:**
-  * Membangun model prediksi resiko kredit macet (*Loan Default Prediction*) dengan membandingkan performa k-NN, Naive Bayes, Decision Tree, dan Random Forest.
+  * Teknik menangani kelas tidak seimbang: **SMOTE** (*Synthetic Minority Over-sampling Technique*).
+* **🎯 Checklist Pemahaman Diri Modul 04:**
+  - [ ] Saya bisa membedakan kapan harus menggunakan k-NN, Naive Bayes, Decision Tree, atau Random Forest.
+  - [ ] Saya paham mengapa akurasi 99% bisa berbahaya jika data positif kanker hanya 1% dan model memprediksi semua negatif.
+  - [ ] Saya bisa membaca diagram Confusion Matrix dan menghitung Precision serta Recall.
 
 ---
 
@@ -198,20 +224,21 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 *Tujuan: Memahami dan mengimplementasikan algoritma prediksi nilai angka kontinu (prediksi harga, penjualan, durasi).*
 
 * **5.1 Simple & Multiple Linear Regression**
-  * Intuisi garis tren terbaik: Formula $Y = \beta_0 + \beta_1 X + \epsilon$.
-  * Metode *Ordinary Least Squares (OLS)*: Meminimalkan jarak selisih kuadrat residual.
-  * Interpretasi Koefisien dan Intersep dalam bahasa bisnis.
+  * *Analogi*: Makelar properti yang menaksir harga rumah: "Setiap tambah 1 meter persegi, harga naik 5 juta".
+  * Formula $Y = \beta_0 + \beta_1 X + \epsilon$.
+  * Metode *Ordinary Least Squares (OLS)*.
 * **5.2 Non-Linear & Polynomial Regression**
-  * Ketika hubungan antar variabel tidak berbentuk garis lurus melainkan kurva.
-  * Menambahkan fitur polinomial dengan `PolynomialFeatures`.
+  * Ketika hubungan data membentuk lengkungan/kurva, bukan garis lurus.
 * **5.3 Tree-Based Regressor**
-  * **Decision Tree Regressor** dan **Random Forest Regressor** untuk data non-linear berdimensi tinggi.
+  * Menggunakan Decision Tree dan Random Forest untuk memprediksi angka kontinu.
 * **5.4 Metrik Evaluasi Regresi**
-  * **MAE** (*Mean Absolute Error*): Rata-rata selisih absolut (mudah dipahami pembisnis).
-  * **MSE** (*Mean Squared Error*) & **RMSE** (*Root Mean Squared Error*): Memberi penalti berat pada error besar.
-  * **R-Squared ($R^2$)** & **Adjusted $R^2$**: Mengukur seberapa besar variansi target mampu dijelaskan oleh fitur.
-* **🎯 Studi Kasus Modul 05:**
-  * Prediksi estimasi harga mobil bekas atau harga rumah berdasarkan tahun produksi, jarak tempuh, kapasitas mesin, dan lokasi.
+  * **MAE** (*Mean Absolute Error*): Selisih rupiah/angka rata-rata yang mudah dipahami bos/manajemen.
+  * **RMSE** (*Root Mean Squared Error*): Menghukum error besar dengan kuadrat.
+  * **R-Squared ($R^2$)**: Menjelaskan seberapa persen variasi harga yang berhasil dijelaskan oleh model kita.
+* **🎯 Checklist Pemahaman Diri Modul 05:**
+  - [ ] Saya paham perbedaan mendasar Klasifikasi (kategori) dan Regresi (angka kontinu).
+  - [ ] Saya bisa menginterpretasikan nilai koefisien regresi.
+  - [ ] Saya bisa membedakan arti metrik MAE, RMSE, dan nilai $R^2$.
 
 ---
 
@@ -219,57 +246,53 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 *Tujuan: Mengelompokkan data tanpa target label untuk menemukan segmen pelanggan atau pola alami yang tersembunyi.*
 
 * **6.1 K-Means Clustering**
-  * Intuisi: Memilih $K$ titik pusat (*centroid*), mengelompokkan data ke centroid terdekat, dan memperbarui posisi centroid secara berulang.
-  * Menentukan jumlah cluster optimal: **Elbow Method** (*Inertia*) dan **Silhouette Analysis**.
-  * Keterbatasan K-Means: Sensitif terhadap outlier dan bentuk klaster non-lingkaran.
-* **6.2 Hierarchical Clustering (Agglomerative)**
-  * Intuisi pendekatan *bottom-up*: Dari setiap titik berdiri sendiri hingga bergabung menjadi satu pohon besar.
-  * Membaca dan memotong **Dendrogram** untuk menentukan jumlah kelompok.
-* **6.3 DBSCAN (*Density-Based Spatial Clustering of Applications with Noise*)**
-  * Intuisi: Mengelompokkan berdasarkan kepadatan titik, bukan jarak pusat semata.
-  * Keunggulan emas: Otomatis mendeteksi data pencilan/noise tanpa dipaksa masuk ke dalam kelompok.
-  * Parameter penting: `eps` (radius) dan `min_samples`.
+  * *Analogi*: Membuka 3 cabang gudang logistik baru (titik pusat/centroid) agar berada paling dekat dengan rumah-rumah pelanggan di sekitarnya.
+  * Menentukan jumlah cluster optimal: **Elbow Method** dan **Silhouette Score**.
+* **6.2 Hierarchical Clustering (Dendrogram)**
+  * *Analogi*: Pohon silsilah keluarga, dari individu hingga bertemu pada leluhur yang sama.
+* **6.3 DBSCAN (*Density-Based*)**
+  * *Analogi*: Menemukan kerumunan orang di stadion; orang yang menyendiri jauh di sudut tribun otomatis dianggap outlier/noise.
 * **6.4 Reduksi Dimensi dengan PCA (*Principal Component Analysis*)**
-  * Mengompresi puluhan kolom fitur menjadi 2 atau 3 komponen utama (*Principal Components*) tanpa kehilangan informasi penting.
-  * Visualisasi klaster dalam grafik 2D dan 3D interaktif.
-* **🎯 Studi Kasus Modul 06:**
-  * Segmentasi Pelanggan Toko Online berdasarkan Recency, Frequency, Monetary (Analisis RFM) untuk menentukan strategi promosi yang tepat sasaran.
+  * *Analogi*: Memotret patung 3 dimensi dari sudut pandang terbaik agar bayangannya di dinding 2D tetap menampilkan bentuk patung sejelas mungkin.
+* **🎯 Checklist Pemahaman Diri Modul 06:**
+  - [ ] Saya paham bahwa dalam Unsupervised Learning tidak ada kolom target/label.
+  - [ ] Saya bisa menentukan jumlah K optimal pada K-Means menggunakan grafik Elbow Method.
+  - [ ] Saya bisa memproyeksikan data berdimensi banyak menjadi plot 2D menggunakan PCA.
 
 ---
 
 ### 📦 Modul 07: Unsupervised Learning II – Aturan Asosiasi (*Association Rule Mining*)
-*Tujuan: Menemukan pola keranjang belanja (*Market Basket Analysis*) untuk rekomendasi produk dan tata letak toko.*
+*Tujuan: Menemukan pola keranjang belanja (*Market Basket Analysis*) untuk strategi penataan produk dan diskon bundling.*
 
 * **7.1 Konsep Dasar Analisis Keranjang Belanja**
-  * Mengapa aturan "Jika membeli produk A, maka kemungkinan besar akan membeli produk B" bernilai milyaran rupiah bagi supermarket & e-commerce.
+  * *Analogi*: Kisah klasik supermarket: Pembeli popok bayi di hari Jumat sore sering kali membeli minuman kaleng sekaligus.
   * Metrik Inti:
-    * **Support**: Seberapa sering kombinasi item muncul dalam total transaksi.
-    * **Confidence**: Seberapa sering item B dibeli saat item A dibeli.
-    * **Lift Ratio**: Mengukur kekuatan aturan dibandingkan jika item dibeli secara kebetulan (Lift > 1 = asosiasi positif kuat).
-* **7.2 Algoritma Apriori**
-  * Prinsip Apriori: "Jika suatu itemset tidak sering muncul (*infrequent*), maka seluruh subset-nya juga tidak akan sering muncul".
-  * Mengubah data transaksi kasir menjadi matriks *One-Hot Transaction* menggunakan `TransactionEncoder`.
-  * Implementasi dengan pustaka `mlxtend`.
-* **7.3 Algoritma FP-Growth (*Frequent Pattern Growth*)**
-  * Mengapa FP-Growth jauh lebih cepat dan hemat memori daripada Apriori pada transaksi besar (*Big Data*).
-* **🎯 Studi Kasus Modul 07:**
-  * Menganalisis log transaksi ribuan struk belanja kasir swalayan untuk merancang paket bundling diskon dan tata letak rak barang.
+    * **Support**: Seberapa populer kombinasi barang tersebut di seluruh struk kasir.
+    * **Confidence**: Seberapa pasti pembeli barang A akan ikut mengambil barang B.
+    * **Lift Ratio**: Ukuran kekuatan asosiasi (Lift > 1 = korelasi positif nyata, bukan kebetulan).
+* **7.2 Algoritma Apriori & FP-Growth**
+  * Prinsip eliminasi Apriori dan efisiensi pohon FP-Growth.
+  * Menggunakan pustaka `mlxtend` pada data transaksi ritel.
+* **🎯 Checklist Pemahaman Diri Modul 07:**
+  - [ ] Saya bisa mengubah log transaksi belanja menjadi tabel matriks biner One-Hot.
+  - [ ] Saya bisa membaca dan menafsirkan arti nilai Support, Confidence, dan Lift Ratio.
 
 ---
 
 ### 📦 Modul 08: Deteksi Anomali & Dasar Text Mining
-*Tujuan: Memperluas keahlian data mining ke deteksi penipuan/keanehan sistem dan pengolahan data teks bebas.*
+*Tujuan: Memperluas keahlian data mining ke deteksi kecurangan sistem dan pengolahan data teks bebas.*
 
 * **8.1 Deteksi Anomali dengan Isolation Forest**
-  * Intuisi: Data anomali/asing lebih sedikit dan berbeda, sehingga lebih mudah diisolasi/dipisahkan dengan sedikit pemotongan pohon keputusan.
-  * Studi Kasus: Deteksi transaksi kartu kredit mencurigakan (*Fraud Detection*).
-* **8.2 Pengantar Text Mining & NLP Dasar**
-  * Karakteristik data teks: Tidak terstruktur (*unstructured data*).
-  * Tahapan Text Preprocessing: *Case folding*, *Tokenizing*, *Stopword Removal*, dan *Stemming/Lemmatization*.
-  * Representasi Teks Numerik: **Bag of Words (BoW)** dan **TF-IDF** (*Term Frequency - Inverse Document Frequency*).
-  * Klasifikasi Teks Sederhana: Analisis sentimen ulasan produk (Positif vs Negatif) menggunakan Naive Bayes.
-* **🎯 Studi Kasus Modul 08:**
-  * Menganalisis ribuan ulasan aplikasi di Google Play Store atau toko online untuk mendeteksi sentimen kepuasan pengguna.
+  * *Analogi*: Satpam bank yang memeriksa ribuan slip setoran; transaksi mencurigakan (anomali) biasanya nilainya ganjil atau di jam yang tidak lazim sehingga sangat mudah dipisahkan.
+* **8.2 Pengantar Text Mining & Analisis Sentimen**
+  * *Analogi*: Mengubah surat ulasan pelanggan menjadi frekuensi kata numerik.
+  * Text Preprocessing: *Lowercasing*, *Tokenizing*, *Stopword Removal*, *Stemming*.
+  * Pembobotan **TF-IDF** (*Term Frequency - Inverse Document Frequency*).
+  * Klasifikasi sentimen ulasan (Positif / Negatif) dengan Naive Bayes.
+* **🎯 Checklist Pemahaman Diri Modul 08:**
+  - [ ] Saya bisa menerapkan Isolation Forest untuk menandai data anomali.
+  - [ ] Saya bisa membersihkan data teks dari tanda baca dan kata sambung umum (*stopwords*).
+  - [ ] Saya bisa mengubah kumpulan kalimat teks menjadi matriks angka menggunakan TF-IDF.
 
 ---
 
@@ -280,50 +303,50 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
   * Menghindari bias pemilihan data uji acak dengan membagi data menjadi $K$ lipatan bergilir.
 * **9.2 Penyetelan Hyperparameter (*Hyperparameter Tuning*)**
   * **GridSearchCV**: Mencoba seluruh kombinasi parameter secara sistematis.
-  * **RandomizedSearchCV**: Mencari kombinasi parameter terbaik secara acak (jauh lebih cepat untuk ruang parameter besar).
+  * **RandomizedSearchCV**: Mencari kombinasi terbaik secara acak (cepat dan efisien).
 * **9.3 Scikit-Learn Pipeline**
-  * Mengapa pipeline krusial? Mencegah kebocoran data (*Data Leakage*) saat preprocessing.
-  * Menggabungkan Imputer, Scaler, Encoder, dan Model Klasifikasi menjadi satu objek `Pipeline` yang elegan.
-* **9.4 Serialisasi Model: Menyimpan & Memuat Kembali Model**
-  * Menyimpan pipeline model terlatih ke disk menggunakan pustaka `joblib` atau `pickle` (`model.pkl`).
-  * Menguji memuat ulang model di skrip terpisah untuk memprediksi data masukan baru (*Inference*).
-* **🎯 Latihan Modul 09:**
-  * Membuat pipeline utuh dari data mentah hingga penyimpanan file model `best_model.joblib`.
+  * Mengapa pipeline krusial? Menghindari *Data Leakage* dengan merangkai Imputer -> Scaler -> Model menjadi satu kesatuan rapi.
+* **9.4 Serialisasi Model: Menyimpan & Memuat Model**
+  * Menyimpan pipeline ke file biner (`.joblib` atau `.pkl`).
+  * Menguji fungsi `joblib.load()` untuk melakukan prediksi pada data masukan baru.
+* **🎯 Checklist Pemahaman Diri Modul 09:**
+  - [ ] Saya bisa menyusun objek `Pipeline` Scikit-Learn dari preprocessing hingga estimator.
+  - [ ] Saya bisa menggunakan GridSearchCV untuk mencari nilai parameter terbaik.
+  - [ ] Saya berhasil mengekspor model menjadi file `model.joblib`.
 
 ---
 
-### 🚀 Modul 10: The Fullstack Milestone – Membangun & Mendeploy Web App Interaktif
+### 🚀 Modul 10: The Fullstack Milestone – Web App Interaktif (Streamlit)
 *Tujuan: Mengubah file notebook menjadi aplikasi web interaktif yang hidup, fungsional, dan dapat diakses siapa saja melalui internet.*
 
-* **10.1 Mengapa Model Data Mining Harus Dibuatkan Web App?**
-  * Klien, manajer, atau rekan kerja non-teknis tidak bisa membaca file notebook `.ipynb`. Mereka membutuhkan antarmuka visual interaktif yang ramah pengguna.
-* **10.2 Mengenal Streamlit (Python Web Framework untuk Praktisi Data)**
-  * Keunggulan Streamlit: Murni kode Python, tanpa perlu HTML/CSS/JavaScript rumit, reaktif secara otomatis.
-  * Elemen Input Streamlit: `st.title()`, `st.slider()`, `st.selectbox()`, `st.number_input()`, `st.file_uploader()`.
-  * Visualisasi Interaktif: Menampilkan grafik Plotly, diagram Matplotlib, dan tabel DataFrame interaktif.
-* **10.3 Arsitektur Web App Data Mining**
-  * Membaca file model `model.joblib` yang telah disimpan dari Colab.
-  * Menerima input dari pengguna melalui formulir web.
-  * Melakukan prediksi secara real-time dan menampilkan hasil diagnosis/rekomendasi beserta probabilitasnya.
-  * Fitur Batch Prediction: Pengguna dapat mengunggah file CSV data baru, lalu aplikasi otomatis memproses dan menyediakan tombol unduh hasil prediksi.
-* **10.4 Menguji Streamlit Langsung dari Google Colab**
-  * Menjalankan server Streamlit di Colab menggunakan terowongan `localtunnel` atau `ngrok` untuk pratinjau cepat tanpa instalasi lokal.
+* **10.1 Mengapa Praktisi Data Mining Harus Paham Web App?**
+  * Rekan kerja non-teknis dan pimpinan tidak membaca kode notebook; mereka butuh tombol, slider, dan visualisasi yang mudah dimengerti.
+* **10.2 Mengenal Streamlit (Python Web Framework)**
+  * Input widgets: `st.slider()`, `st.selectbox()`, `st.number_input()`, `st.file_uploader()`.
+  * Menampilkan grafik interaktif Plotly dan tabel interaktif Pandas.
+* **10.3 Integrasi Model Data Mining ke Web App**
+  * Membaca file `model.joblib` di Streamlit.
+  * Menerima input data pengguna, memproses ke pipeline, dan menampilkan hasil prediksi serta probabilitasnya.
+  * Fitur unggah file CSV untuk prediksi massal (*Batch Prediction*).
+* **10.4 Menjalankan Streamlit dari Google Colab**
+  * Menggunakan terowongan tunnel `localtunnel` atau `ngrok` untuk melihat pratinjau web app langsung dari Colab.
 * **10.5 Deployment Gratis ke Streamlit Community Cloud**
-  * Menghubungkan repositori GitHub dengan Streamlit Cloud.
-  * Menyusun file `requirements.txt` yang tepat agar aplikasi berjalan mulus di server cloud.
-  * Mendapatkan URL publik gratis (contoh: `https://nama-aplikasi.streamlit.app`) untuk dicantumkan di CV & LinkedIn!
-* **🎯 Proyek Modul 10:**
-  * Membangun aplikasi web kalkulator prediksi resiko penyakit jantung atau prediksi kelayakan kredit nasabah yang online dan responsif.
+  * Menghubungkan repo GitHub ke Streamlit Cloud dan mendapatkan tautan publik gratis yang aktif 24/7.
+* **🎯 Checklist Pemahaman Diri Modul 10:**
+  - [ ] Saya bisa membuat skrip antarmuka Streamlit sederhana di Python.
+  - [ ] Saya bisa memuat model machine learning di Streamlit dan menampilkan hasil prediksi berdasarkan input user.
+  - [ ] Web app saya berhasil online dan bisa dibuka dari smartphone teman melalui link publik.
 
 ---
 
-### 🏆 Modul 11: Capstone Project Akhir & Portofolio Ready
-*Tujuan: Mengerjakan proyek data mining end-to-end secara mandiri dari nol hingga tayang, serta mendokumentasikannya secara profesional di GitHub.*
+### 🏆 Modul 11: Capstone Project Akhir, Etika Data & Portofolio Ready
+*Tujuan: Mengerjakan proyek data mining end-to-end secara mandiri dari nol hingga tayang, menerapkan etika data, serta mendokumentasikannya secara profesional di GitHub.*
 
-* **11.1 Memilih Masalah & Dataset Nyata**
-  * Sumber dataset berkualitas: Kaggle, UCI Machine Learning Repository, Satu Data Indonesia, Google Dataset Search.
-  * Memilih 1 domain masalah: Finansial, Layanan Kesehatan, Ritel/E-commerce, atau Pendidikan.
-* **11.2 Eksekusi Alur CRISP-DM Lengkap**
+* **11.1 Etika & Legalitas Penambangan Data (Data Ethics)**
+  * **Prinsip Anonimitas & Privasi**: Kepatuhan terhadap UU Perlindungan Data Pribadi (UU PDP) / GDPR. Jangan menyertakan NIK, nomor telepon, alamat asli, atau data medis tanpa persetujuan (*consent*).
+  * **Bias & Keadilan Algoritma (*Fairness*)**: Memastikan model tidak mendiskriminasi ras, gender, atau agama.
+  * **Etika Web Scraping**: Memeriksa file `robots.txt` situs target dan tidak membebani server target secara brutal.
+* **11.2 Eksekusi Alur CRISP-DM Lengkap (Capstone Project)**
   1. Identifikasi masalah dan rumusan pertanyaan bisnis.
   2. Exploratory Data Analysis & visualisasi insight.
   3. Preprocessing, penanganan missing value, dan rekayasa fitur.
@@ -333,32 +356,19 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
   7. Pembuatan antarmuka web interaktif dengan Streamlit.
   8. Deployment live ke cloud publik.
 * **11.3 Panduan Showcase Portofolio di GitHub**
-  * Menulis file `README.md` repositori proyek yang memukau: Deskripsi masalah, demo GIF/video aplikasi, arsitektur data, petunjuk instalasi, dan tautan live app.
-  * Tips memasukkan proyek ke resume/CV dan LinkedIn untuk menarik minat perekrut (*recruiter*).
+  * Menulis file `README.md` portofolio yang memikat: Judul catchy, demo GIF/video aplikasi, arsitektur data, petunjuk instalasi, dan tautan live app.
+  * Cara menceritakan proyek ini saat sesi wawancara kerja (*interview technique*).
+* **🎯 Checklist Akhir Kelulusan Hero:**
+  - [ ] Capstone project selesai menerapkan siklus CRISP-DM lengkap dari awal hingga akhir.
+  - [ ] Aplikasi web Streamlit aktif di internet dan dapat diakses publik.
+  - [ ] Repositori GitHub memiliki README bintang lima dengan demonstrasi visual yang rapi.
 
 ---
 
-## 🛠️ Ringkasan Alat & Pustaka (*Tech Stack*)
+## 💡 5 Aturan Emas untuk Pembelajar Awam
 
-| Kategori | Alat / Pustaka | Fungsi Utama |
-| :--- | :--- | :--- |
-| **Platform Eksekusi** | Google Colab | Lingkungan komputasi berbasis cloud gratis dengan akses CPU/GPU. |
-| **Manipulasi & Perhitungan** | Pandas, NumPy | Membaca tabel, membersihkan kolom, dan kalkulasi array numerik. |
-| **Visualisasi Data** | Matplotlib, Seaborn, Plotly | Membuat grafik statis dan diagram interaktif. |
-| **Core Data Mining & ML** | Scikit-Learn | Klasifikasi, regresi, klasterisasi, preprocessing, dan pipeline. |
-| **Aturan Asosiasi** | MLxtend | Algoritma Apriori & FP-Growth untuk *market basket analysis*. |
-| **Pembersihan Missing Data** | Missingno | Visualisasi pola data hilang pada dataset. |
-| **Imbalanced Data** | Imbalanced-learn (SMOTE) | Menangani ketidakseimbangan kelas data. |
-| **Penyimpanan Model** | Joblib | Menyimpan dan memuat objek model machine learning. |
-| **Antarmuka Web App** | Streamlit | Membangun dashboard dan web aplikasi interaktif dengan Python murni. |
-| **Deployment Cloud** | Streamlit Community Cloud | Mempublikasikan aplikasi web ke internet secara gratis. |
-| **Version Control & Sharing**| Git & GitHub | Mengelola kode sumber, melacak revisi, dan portofolio publik. |
-
----
-
-## 💡 Tips Belajar untuk Pemula Awam
-
-1. **Jangan Hafalkan Rumus Matematis**: Fokus pada **intuisi** ("mengapa algoritma ini memilih memotong cabang pohon ini?", "mengapa jarak euclidean sensitif terhadap perbedaan skala harga vs umur?").
-2. **Ketik Ulang Kode, Jangan Sekadar Copy-Paste**: Mengetik ulang baris kode melatih memori otot jari dan kepekaan terhadap kesalahan ketik (*syntax error*).
-3. **Bersahabatlah dengan Error**: Ketika muncul teks merah di Colab, jangan panik! Gulir ke baris paling bawah, baca nama error-nya (misal: `KeyError`, `ValueError`, `IndexError`), dan cari tahu penyebabnya.
-4. **Learn in Public**: Setiap kali menyelesaikan satu modul, buat postingan rangkuman di LinkedIn atau bagikan cuplikan notebook di GitHub. Konsistensi kecil yang dilakukan terus-menerus akan membawa Anda dari **Zero** menjadi **Hero**!
+1. **Intuisi Lebih Penting daripada Rumus**: Jangan takut jika Anda bukan lulusan matematika. Yang terpenting adalah mengerti *mengapa* sebuah algoritma mengambil keputusan tersebut.
+2. **Ketik Ulang Kodenya**: Jangan sekadar membaca atau salin-tempel. Mengetik kode membangun kebiasaan memori otot dan kepekaan terhadap typo.
+3. **Pesan Error Adalah Guru Terbaik**: Ketika muncul teks merah di Colab, jangan panik! Gulir ke baris paling bawah, baca jenis error-nya, dan cari tahu penyebabnya.
+4. **Jaga Konsistensi**: Luangkan 30-60 menit setiap hari daripada belajar 7 jam sekaligus seminggu sekali lalu berhenti.
+5. **Learn in Public**: Bagikan kemajuan belajar Anda di LinkedIn atau GitHub. Mendokumentasikan perjalanan belajar adalah cara terbaik untuk memperkuat pemahaman sekaligus membangun personal branding!
