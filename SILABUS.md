@@ -75,10 +75,30 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 
 ## 📚 Rincian Modul Pembelajaran
 
+Berikut adalah daftar navigasi cepat ke seluruh modul praktikum interaktif (*Jupyter Notebooks*) beserta akses langsung ke Google Colab:
+
+| No | Modul Pembelajaran | Berkas Praktik Interaktif | Akses Langsung Google Colab |
+| :---: | :--- | :--- | :---: |
+| **00** | **Mindset Data Mining & Google Colab Onboarding** | [00_Onboarding_Google_Colab.ipynb](notebooks/00_Onboarding_Google_Colab.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/00_Onboarding_Google_Colab.ipynb) |
+| **01** | **Fondasi Python & Manipulasi Data Tabel** | [01_Python_Pandas_Numpy_Basics.ipynb](notebooks/01_Python_Pandas_Numpy_Basics.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/01_Python_Pandas_Numpy_Basics.ipynb) |
+| **02** | **Data Cleaning & Preprocessing (Jantung Data Mining)** | [02_Data_Cleaning_and_Preprocessing.ipynb](notebooks/02_Data_Cleaning_and_Preprocessing.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/02_Data_Cleaning_and_Preprocessing.ipynb) |
+| **03** | **Exploratory Data Analysis (EDA) & Feature Engineering** | [03_EDA_and_Feature_Engineering.ipynb](notebooks/03_EDA_and_Feature_Engineering.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/03_EDA_and_Feature_Engineering.ipynb) |
+| **04** | **Supervised Learning I: Klasifikasi (Classification)** | [04_Classification_Algorithms.ipynb](notebooks/04_Classification_Algorithms.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/04_Classification_Algorithms.ipynb) |
+| **05** | **Supervised Learning II: Regresi (Regression)** | [05_Regression_Algorithms.ipynb](notebooks/05_Regression_Algorithms.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/05_Regression_Algorithms.ipynb) |
+| **06** | **Unsupervised Learning I: Klasterisasi & Reduksi Dimensi** | [06_Clustering_and_PCA.ipynb](notebooks/06_Clustering_and_PCA.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/06_Clustering_and_PCA.ipynb) |
+| **07** | **Unsupervised Learning II: Aturan Asosiasi (Apriori & FP-Growth)** | [07_Association_Rule_Mining.ipynb](notebooks/07_Association_Rule_Mining.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/07_Association_Rule_Mining.ipynb) |
+| **08** | **Deteksi Anomali (Isolation Forest) & Dasar Text Mining (NLP)** | [08_Anomaly_Detection_and_Text_Mining.ipynb](notebooks/08_Anomaly_Detection_and_Text_Mining.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/08_Anomaly_Detection_and_Text_Mining.ipynb) |
+| **09** | **Hyperparameter Tuning, Pipeline & Serialisasi Model (.joblib)** | [09_Pipeline_and_Model_Export.ipynb](notebooks/09_Pipeline_and_Model_Export.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/09_Pipeline_and_Model_Export.ipynb) |
+| **10** | **The Fullstack Milestone: Web App Interaktif (Streamlit)** | [10_Streamlit_Web_App_Colab.ipynb](notebooks/10_Streamlit_Web_App_Colab.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/10_Streamlit_Web_App_Colab.ipynb) |
+| **11** | **Capstone Project Akhir, Etika Data & Portofolio Ready** | [11_Capstone_Project_Guide.ipynb](notebooks/11_Capstone_Project_Guide.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/11_Capstone_Project_Guide.ipynb) |
+
+
 ---
 
 ### 📦 Modul 00: Mindset Data Mining & Google Colab Onboarding
 *Tujuan: Memahami filosofi data mining, membedakannya dari disiplin ilmu serumpun, menguasai 2 tugas pokok (Prediktif vs Deskriptif), 4 tipe data dunia nyata, serta menguasai ekosistem Google Colab tanpa perlu ribet instalasi lokal.*
+
+> 🔗 **Buka Notebook Praktik**: [`notebooks/00_Onboarding_Google_Colab.ipynb`](notebooks/00_Onboarding_Google_Colab.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/00_Onboarding_Google_Colab.ipynb)
 
 * **0.1 Apa Itu Data Mining Sebenarnya?**
   * Analogi "Mendulang Emas di Sungai Keruh": Mengubah tumpukan data mentah (*raw data*) menjadi wawasan bisnis (*actionable insights*).
@@ -124,6 +144,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 ### 📦 Modul 01: Fondasi Python & Manipulasi Data untuk Pemula
 *Tujuan: Menguasai sintaks dasar Python yang sering digunakan dalam penambangan data serta manipulasi tabel menggunakan Pandas dan visualisasi data.*
 
+> 🔗 **Buka Notebook Praktik**: [`notebooks/01_Python_Pandas_Numpy_Basics.ipynb`](notebooks/01_Python_Pandas_Numpy_Basics.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/01_Python_Pandas_Numpy_Basics.ipynb)
+
 * **1.1 Python Esensial untuk Data (Bebas Teori Rumit)**
   * Tipe data: Integer, Float, String, Boolean.
   * Struktur data penting: List, Dictionary, Tuple, dan manipulasi index/slicing.
@@ -151,6 +173,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 
 ### 📦 Modul 02: Data Cleaning & Preprocessing (Jantung Data Mining)
 *Tujuan: Memahami prinsip "Garbage In, Garbage Out" serta mampu membersihkan dan menyiapkan data mentah yang berantakan agar layak diproses oleh algoritma.*
+
+> 🔗 **Buka Notebook Praktik**: [`notebooks/02_Data_Cleaning_and_Preprocessing.ipynb`](notebooks/02_Data_Cleaning_and_Preprocessing.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/02_Data_Cleaning_and_Preprocessing.ipynb)
 
 * **2.1 Penanganan Nilai Hilang (*Missing Values*)**
   * Mengidentifikasi data hilang: `.isna().sum()`, visualisasi data kosong dengan `missingno`.
@@ -183,6 +207,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 ### 📦 Modul 03: Exploratory Data Analysis (EDA) & Feature Engineering
 *Tujuan: Mampu menggali cerita dan pola tersembunyi dari dataset serta merekayasa fitur baru yang meningkatkan performa model.*
 
+> 🔗 **Buka Notebook Praktik**: [`notebooks/03_EDA_and_Feature_Engineering.ipynb`](notebooks/03_EDA_and_Feature_Engineering.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/03_EDA_and_Feature_Engineering.ipynb)
+
 * **3.1 Alur Kerja EDA Terstruktur**
   * Analisis Univariat: Mengetahui distribusi satu per satu variabel (Skewness, Kurtosis).
   * Analisis Bivariat: Mengetahui hubungan 2 variabel (Korelasi Pearson vs Spearman, Cross-tabulation).
@@ -204,6 +230,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 
 ### 📦 Modul 04: Supervised Learning I – Klasifikasi (*Classification*)
 *Tujuan: Memahami intuisi, implementasi kode, dan metrik evaluasi algoritma prediksi kategori/label diskrit.*
+
+> 🔗 **Buka Notebook Praktik**: [`notebooks/04_Classification_Algorithms.ipynb`](notebooks/04_Classification_Algorithms.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/04_Classification_Algorithms.ipynb)
 
 * **4.1 Konsep Dasar Klasifikasi & Partisi Data**
   * Perbedaan Data Latih (*Training Set*) dan Data Uji (*Testing Set*).
@@ -238,6 +266,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 ### 📦 Modul 05: Supervised Learning II – Regresi (*Regression*)
 *Tujuan: Memahami dan mengimplementasikan algoritma prediksi nilai angka kontinu (prediksi harga, penjualan, durasi).*
 
+> 🔗 **Buka Notebook Praktik**: [`notebooks/05_Regression_Algorithms.ipynb`](notebooks/05_Regression_Algorithms.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/05_Regression_Algorithms.ipynb)
+
 * **5.1 Simple & Multiple Linear Regression**
   * *Analogi*: Makelar properti yang menaksir harga rumah: "Setiap tambah 1 meter persegi, harga naik 5 juta".
   * Formula $Y = \beta_0 + \beta_1 X + \epsilon$.
@@ -260,6 +290,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 ### 📦 Modul 06: Unsupervised Learning I – Klasterisasi (*Clustering*) & Reduksi Dimensi
 *Tujuan: Mengelompokkan data tanpa target label untuk menemukan segmen pelanggan atau pola alami yang tersembunyi.*
 
+> 🔗 **Buka Notebook Praktik**: [`notebooks/06_Clustering_and_PCA.ipynb`](notebooks/06_Clustering_and_PCA.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/06_Clustering_and_PCA.ipynb)
+
 * **6.1 K-Means Clustering**
   * *Analogi*: Membuka 3 cabang gudang logistik baru (titik pusat/centroid) agar berada paling dekat dengan rumah-rumah pelanggan di sekitarnya.
   * Menentukan jumlah cluster optimal: **Elbow Method** dan **Silhouette Score**.
@@ -279,6 +311,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 ### 📦 Modul 07: Unsupervised Learning II – Aturan Asosiasi (*Association Rule Mining*)
 *Tujuan: Menemukan pola keranjang belanja (*Market Basket Analysis*) untuk strategi penataan produk dan diskon bundling.*
 
+> 🔗 **Buka Notebook Praktik**: [`notebooks/07_Association_Rule_Mining.ipynb`](notebooks/07_Association_Rule_Mining.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/07_Association_Rule_Mining.ipynb)
+
 * **7.1 Konsep Dasar Analisis Keranjang Belanja**
   * *Analogi*: Kisah klasik supermarket: Pembeli popok bayi di hari Jumat sore sering kali membeli minuman kaleng sekaligus.
   * Metrik Inti:
@@ -297,6 +331,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 ### 📦 Modul 08: Deteksi Anomali & Dasar Text Mining
 *Tujuan: Memperluas keahlian data mining ke deteksi kecurangan sistem dan pengolahan data teks bebas.*
 
+> 🔗 **Buka Notebook Praktik**: [`notebooks/08_Anomaly_Detection_and_Text_Mining.ipynb`](notebooks/08_Anomaly_Detection_and_Text_Mining.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/08_Anomaly_Detection_and_Text_Mining.ipynb)
+
 * **8.1 Deteksi Anomali dengan Isolation Forest**
   * *Analogi*: Satpam bank yang memeriksa ribuan slip setoran; transaksi mencurigakan (anomali) biasanya nilainya ganjil atau di jam yang tidak lazim sehingga sangat mudah dipisahkan.
 * **8.2 Pengantar Text Mining & Analisis Sentimen**
@@ -313,6 +349,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 
 ### 📦 Modul 09: Hyperparameter Tuning, Pipeline & Serialisasi Model
 *Tujuan: Mengoptimalkan model ke performa puncak dan mengemas alur kerja data mining menjadi artefak yang dapat diintegrasikan dengan aplikasi lain.*
+
+> 🔗 **Buka Notebook Praktik**: [`notebooks/09_Pipeline_and_Model_Export.ipynb`](notebooks/09_Pipeline_and_Model_Export.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/09_Pipeline_and_Model_Export.ipynb)
 
 * **9.1 Validasi Silang (*K-Fold Cross-Validation*)**
   * Menghindari bias pemilihan data uji acak dengan membagi data menjadi $K$ lipatan bergilir.
@@ -333,6 +371,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 
 ### 🚀 Modul 10: The Fullstack Milestone – Web App Interaktif (Streamlit)
 *Tujuan: Mengubah file notebook menjadi aplikasi web interaktif yang hidup, fungsional, dan dapat diakses siapa saja melalui internet.*
+
+> 🔗 **Buka Notebook Praktik**: [`notebooks/10_Streamlit_Web_App_Colab.ipynb`](notebooks/10_Streamlit_Web_App_Colab.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/10_Streamlit_Web_App_Colab.ipynb)
 
 * **10.1 Mengapa Praktisi Data Mining Harus Paham Web App?**
   * Rekan kerja non-teknis dan pimpinan tidak membaca kode notebook; mereka butuh tombol, slider, dan visualisasi yang mudah dimengerti.
@@ -356,6 +396,8 @@ Kurikulum ini tidak dibatasi oleh jumlah pertemuan kaku di kelas formal. Anda da
 
 ### 🏆 Modul 11: Capstone Project Akhir, Etika Data & Portofolio Ready
 *Tujuan: Mengerjakan proyek data mining end-to-end secara mandiri dari nol hingga tayang, menerapkan etika data, serta mendokumentasikannya secara profesional di GitHub.*
+
+> 🔗 **Buka Notebook Praktik**: [`notebooks/11_Capstone_Project_Guide.ipynb`](notebooks/11_Capstone_Project_Guide.ipynb) &nbsp;|&nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antonprafanto/data-mining-zero-to-hero/blob/main/notebooks/11_Capstone_Project_Guide.ipynb)
 
 * **11.1 Etika & Legalitas Penambangan Data (Data Ethics)**
   * **Prinsip Anonimitas & Privasi**: Kepatuhan terhadap UU Perlindungan Data Pribadi (UU PDP) / GDPR. Jangan menyertakan NIK, nomor telepon, alamat asli, atau data medis tanpa persetujuan (*consent*).
